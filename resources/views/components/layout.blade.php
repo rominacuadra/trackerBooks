@@ -5,15 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pixel Positions</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <title>Tracker Books</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-black text-white font-hanken-grotesk pb-20">
-<p class="text-sky-400">The quick brown fox...</p>
 <div class="px-10">
     <nav class="flex justify-between items-center py-4 border-b border-white/10">
         <div>
@@ -23,31 +19,30 @@
         </div>
 
         <div class="space-x-6 font-bold">
-            <a href="#">Jobs</a>
-            <a href="#">Careers</a>
-            <a href="#">Salaries</a>
-            <a href="#">Companies</a>
+            <a href="/books/index">Reading Books</a>
+            <a href="#">Wishing Books</a>
+            <a href="#">Read Books</a>
         </div>
 
-        @auth
+{{--        @auth--}}
             <div class="space-x-6 font-bold flex">
-                <a href="/jobs/create">Post a Job</a>
+                <a href="#"> + New Book</a>
 
-                <form method="POST" action="/logout">
-                    @csrf
-                    @method('DELETE')
+{{--                <form method="POST" action="/logout">--}}
+{{--                    @csrf--}}
+{{--                    @method('DELETE')--}}
 
-                    <button>Log Out</button>
-                </form>
+{{--                    <button>Log Out</button>--}}
+{{--                </form>--}}
             </div>
-        @endauth
+{{--        @endauth--}}
 
-        @guest
-            <div class="space-x-6 font-bold">
-                <a href="/register">Sign Up</a>
-                <a href="/login">Log In</a>
-            </div>
-        @endguest
+{{--        @guest--}}
+{{--            <div class="space-x-6 font-bold">--}}
+{{--                <a href="/register">Sign Up</a>--}}
+{{--                <a href="/login">Log In</a>--}}
+{{--            </div>--}}
+{{--        @endguest--}}
     </nav>
 
     <main class="mt-10 max-w-[986px] mx-auto">

@@ -1,3 +1,3 @@
 <x-layout>
-    Hello word!!
+    Track your books!!
 </x-layout>
