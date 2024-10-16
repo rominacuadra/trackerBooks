@@ -19,9 +19,9 @@
         </div>
 
         <div class="space-x-6 font-bold">
-            <a href="/books/index">Reading Books</a>
-            <a href="#">Wishing Books</a>
-            <a href="#">Read Books</a>
+            <a href="/books/reading">Reading Books</a>
+            <a href="/books/wishing">Wishing Books</a>
+            <a href="/books/read">Read Books</a>
         </div>
 
 {{--        @auth--}}

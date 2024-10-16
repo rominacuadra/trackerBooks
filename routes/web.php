@@ -3,4 +3,18 @@
 use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [BookController::class, 'index']);
+Route::get('/', function () {
+    return view('books.index');
+});
+
+Route::get('/books/reading',[BookController::class, 'index'])
+    ->name('books.reading')
+    ->defaults('status', 'reading');
+
+Route::get('/books/wishing',[BookController::class, 'index'])
+    ->name('books.wishing')
+    ->defaults('status', 'wishing');
+
+Route::get('/books/read',[BookController::class, 'index'])
+    ->name('books.read')
+    ->defaults('status', 'read');
