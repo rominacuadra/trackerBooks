@@ -10,4 +10,12 @@ class BookController extends Controller {
         $books = Book::where('status', $status)->get();
         return view('books.index', compact('books'));
     }
+
+    public function create(): View {
+        return view('books.create');
+    }
+
+    public function store() {
+        dd('se guardo');
+    }
 }

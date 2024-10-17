@@ -7,6 +7,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('books/create', [BookController::class, 'create']);
+Route::post('books/create', [BookController::class, 'store']);
+
 Route::get('/books/reading',[BookController::class, 'index'])
     ->name('books.reading')
     ->defaults('status', 'reading');

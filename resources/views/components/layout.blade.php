@@ -26,7 +26,7 @@
 
 {{--        @auth--}}
             <div class="space-x-6 font-bold flex">
-                <a href="#"> + New Book</a>
+                <a href="/books/create"> + New Book</a>
 
 {{--                <form method="POST" action="/logout">--}}
 {{--                    @csrf--}}
