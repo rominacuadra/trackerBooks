@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('author');
             $table->string('format')->default('paper');
+            $table->string('cover')->nullable();
             $table->integer('rating')->nullable();
             $table->string('review')->nullable();
             $table->string('status')->default('wishing');

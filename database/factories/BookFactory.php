@@ -20,6 +20,7 @@ class BookFactory extends Factory
             'title' => $this->faker->sentence(),
             'author' => $this->faker->name(),
             'format' => $this->faker->randomElement(['paper','ebook','pdf']),
+            'cover'  => $this->faker->imageUrl(),
             'rating' => $this->faker->numberBetween(1,5),
             'review' => $this->faker->randomElement(['very good','bad','good']),
             'status' => $this->faker->randomElement(['reading','wishing','read']),
